@@ -1,74 +1,53 @@
 # 2400030965-FSAD-SKILL-EXAM
 
-# Vehicle Management System
+# Vehicle Management System - Frontend Only
 
-A Maven Hibernate project with frontend for managing vehicle records.
-
-## Project Structure
-
-```
-├── src/main/java/com/klef/fsad/exam/
-│   ├── Vehicle.java          # Entity class with auto-generated ID
-│   └── ClientDemo.java       # Database operations (Insert & Update)
-├── src/main/resources/
-│   └── hibernate.cfg.xml     # Hibernate configuration
-├── frontend/
-│   └── index.html            # Standalone web interface
-└── pom.xml                   # Maven configuration
-```
+A standalone HTML/CSS/JavaScript frontend for managing vehicle records.
 
 ## Features
 
-### Backend (Hibernate)
-- **Vehicle Entity**: ID (auto-generated), Name, Description, Date, Status
-- **Insert Operation**: Add new vehicle records to database
-- **Update Operation**: Update vehicle Name and Status by ID
-- **Database**: fsadexam (MySQL)
-
-### Frontend (HTML/CSS/JavaScript)
-- Modern responsive design
-- Insert vehicle form
-- Update vehicle form
+### I. Insert New Vehicle
+- Add vehicle with Name, Description, Date, and Status
+- Auto-generated ID
 - Real-time validation
-- Success/error messages
+- Success confirmation with vehicle details
 
-## Setup Instructions
-
-### 1. Database Setup
-```sql
-CREATE DATABASE fsadexam;
-```
-
-### 2. Configure Database
-Edit `src/main/resources/hibernate.cfg.xml`:
-```xml
-<property name="hibernate.connection.username">YOUR_USERNAME</property>
-<property name="hibernate.connection.password">YOUR_PASSWORD</property>
-```
-
-### 3. Build Project
-```bash
-mvn clean install
-```
-
-### 4. Run Backend
-Run `ClientDemo.java` from your IDE or:
-```bash
-mvn exec:java -Dexec.mainClass="com.klef.fsad.exam.ClientDemo"
-```
-
-### 5. Use Frontend
-Open `frontend/index.html` in your browser (works standalone)
+### II. Update Vehicle
+- Update vehicle Name and Status by ID
+- Validation for existing vehicles
+- Error handling for non-existent IDs
 
 ## Technologies Used
-- Java 11
-- Hibernate 5.6.15
-- MySQL 8.0
-- Maven
-- HTML5/CSS3/JavaScript
+- HTML5
+- CSS3 (Gradient design, animations)
+- JavaScript (ES6)
+- Responsive design
 
-## Package
-`com.klef.fsad.exam`
+## How to Use
 
-## Student ID
-2400030965
+1. Open `index.html` in any web browser
+2. No server or backend required - works standalone
+3. Insert vehicles using the left form
+4. Update vehicles using the right form
+
+## Features
+- ✅ Modern gradient UI design
+- ✅ Responsive layout (mobile-friendly)
+- ✅ In-memory data storage
+- ✅ Form validation
+- ✅ Success/Error messages
+- ✅ Console logging for debugging
+
+## Student Information
+- **Student ID**: 2400030965
+- **Project**: FSAD Skill Exam
+- **Package**: com.klef.fsad.exam (Backend reference)
+
+## Live Demo
+Simply open `index.html` in your browser - no installation needed!
+
+## Browser Compatibility
+- Chrome ✅
+- Firefox ✅
+- Safari ✅
+- Edge ✅
