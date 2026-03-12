@@ -1,3 +1,5 @@
+# 2400030965-FSAD-SKILL-EXAM
+
 # Vehicle Management System
 
 A Maven Hibernate project with frontend for managing vehicle records.
@@ -68,6 +70,5 @@ Open `frontend/index.html` in your browser (works standalone)
 ## Package
 `com.klef.fsad.exam`
 
-## Author
-FSAD Exam Project
-# 2400030965-FSAD-SKILL-EXAM
+## Student ID
+2400030965
